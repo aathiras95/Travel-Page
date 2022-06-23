@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./travelandtour.css">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <!-- font awosome -->
+  <script src="https://kit.fontawesome.com/61d8d73bb4.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;1,300&family=Arvo&family=Caveat&family=Cookie&family=EB+Garamond:ital@0;1&family=Great+Vibes&family=Josefin+Sans:ital,wght@0,100;1,200&family=Libre+Baskerville:ital@0;1&family=Libre+Bodoni:ital@1&family=Merriweather:ital,wght@0,300;1,300&family=Pacifico&family=Roboto+Slab:wght@300;400&family=Send+Flowers&family=Source+Sans+Pro:wght@300;400&family=Square+Peg&family=Tapestry&family=Ubuntu+Mono&family=Water+Brush&display=swap"
+    rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;1,300&family=Arvo&family=Caveat&family=Cookie&family=EB+Garamond:ital@0;1&family=Great+Vibes&family=Josefin+Sans:ital,wght@0,100;1,200&family=Libre+Baskerville:ital@0;1&family=Libre+Bodoni:ital@1&family=Merriweather:ital,wght@0,300;1,300&family=Pacifico&family=Roboto+Slab:wght@300;400&family=Send+Flowers&family=Source+Sans+Pro:wght@300;400&family=Square+Peg&family=Tapestry&family=Ubuntu+Mono&family=Water+Brush&display=swap');
+  </style>
+</head>
+
+<body>
+
+  <div class="fornavbar ">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid ">
+        <img src="./Bimages/brand-color.svg" alt="" class="logo">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#theme" style="color: white;">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#heading4" style="color: white;">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#packages1" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                Packages
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: rgb(162, 188, 245);">
+                <li><a class="dropdown-item" href="#packages1" style="color: white;">World Tour</a></li>
+                <li><a class="dropdown-item" href="#packages1" style="color: white;">South Indian</a></li>
+                <li><a class="dropdown-item" href="#packages1" style="color: white;">North Indian</a></li>
+                <li><a class="dropdown-item" href="#packages1" style="color: white;">Honeymoon Pakages</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#packages1" style="color: white;">Others</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#gallery1" style="color: white;">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " style="color: white;">Blog</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav me-2 mb-2 mb-lg-0">
+            <li class="nav-item">
+
+
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                id="loginuser">
+                <i class="fa-solid fa-user" style="color:white;"></i>
+              </button>
+              </li>
+              <!-- <a class="nav-link active" aria-current="page" href="#" style="color: white;"><i
+                      class="fa-solid fa-user"></i></a> -->
+              <!-- **8*8*8***8*8**88*888**   -->
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Login <i class="fa-solid fa-key" style="color: rgb(34, 100, 199);"></i> <br><span>
+                          <h6>To continue our website</h6>
+                        </span></h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <input type="text" placeholder="@Username/Phonenumber" class="form-control"><br>
+                      <input type="password" placeholder="password" class="form-control"> <br>
+                      <input type="checkbox" id="pass" value="password">
+                      <label for="checkbox">Show Password</label> <br> <br>
+                      <button type="Button" class="loginbtn">Login</button>
+
+
+
+                    </div>
+                    <div class="modal-footer">
+                      <p>No Account yet?</p>
+                      <button type="button" class="btn btn-primary">Create Account</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+              <!-- **8*8*8***8*8**88*888**   -->
+            <!-- </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="#div8" style="color: white;"><i class="fa-solid fa-phone" style="color:white;"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: white;"><i class="fa-solid fa-magnifying-glass"style="color:white;"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="theme" id="theme">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="./Bimages/5751180.webp" class="d-block w-100" alt="..." class="wallpaper">
+          <div class="carousel-caption d-none d-md-block">
+            <p class="slide1">You don't choose where you go,the journey choose you.</p>
+            <button type="button" class="btn btn-primary"
+              style="background-color:rgb(116, 166, 212) ; border: none;">Expolre Now</button>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="./Bimages/185289.webp" class="d-block w-100" alt="..." class="wallpaper">
+          <div class="carousel-caption d-none d-md-block">
+
+            <p class="slide2">Leave your stress behind and come along for the ride</p>
+            <button type="button" class="btn btn-primary"
+              style="background-color:rgb(116, 166, 212) ; border: none;">Expolre Now</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./Bimages/wp2003948.jpg" class="d-block w-100" alt="..." class="wallpaper">
+          <div class="carousel-caption d-none d-md-block">
+
+            <Here class="slide3">Here for you before ,during,and after.</p>
+              <button type="button" class="btn btn-primary"
+                style="background-color:rgb(116, 166, 212) ; border: none;">Expolre Now</button>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div><!-- themeend -->
+  <div>
+    <h6 class="heading">
+      <span class="hd">V</span>
+      <span class="hd">I</span>
+      <span class="hd">S</span>
+      <span class="hd">I</span>
+      <span class="hd">O</span>
+      <span class="hd">N</span>
+      &NonBreakingSpace;
+
+
+      <span class="hd">A</span>
+      <span class="hd">N</span>
+      <span class="hd">D</span>
+      &NonBreakingSpace;
+
+
+      <span class="hd">M</span>
+      <span class="hd">I</span>
+      <span class="hd">S</span>
+      <span class="hd">S</span>
+      <span class="hd">I</span>
+      <span class="hd">O</span>
+      <span class="hd">N</span>
+
+    </h6>
+  </div>
+
+  <div style="padding:10px">
+    <!--for 3rd-->
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Enhance Your Stay With Inspiring Experiences</h5>
+            <img src="./Bimages/image1.webp" alt="" class="vimage">
+            <p class="card-text">Make any stay unforgettable. Discover unique activities
+              for every interest and earn points too.</p>
+            <a href="#" class="btn btn-primary" style="color: black; background-color:orange; border: none;">Book your Choice</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Make Your Dream Vacation Even More Special.</h5>
+            <img src="./Bimages/image2.webp" alt="" class="vimage">
+            <p class="card-text">Homes and Villas by Marriott offers a curated collection luxury home
+              destinations around the world.</p>
+            <a href="#" class="btn btn-primary" style="color: black; background-color:orange; border: none;">Book your Villa</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!--3rd end-->
+  <div>
+    <h6 class="heading" id="heading4">
+      <span class="hd">B</span>
+      <span class="hd">O</span>
+      <span class="hd">O</span>
+      <span class="hd">K</span>
+      &NonBreakingSpace;
+      <span class="hd">N</span>
+      <span class="hd">O</span>
+      <span class="hd">W</span>
+    </h6>
+  </div>
+
+  <div style="padding:10px">
+    <!--4th raw-->
+
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">About</h5>
+            <img src="./Bimages/aboutimage.webp" alt="" class="aboutimg">
+            <p class="card-text">This is one of most interesting
+              project to do some thing different.Tourism is
+              travel for pleasure or business; also the theory and practice of touring, the business of attracting,
+              accommodating, and entertaining tourists.<button type="button" class="btn btn-link" style="text-decoration:none;">Read More</button></p>
+            <br> <br>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body" id="book">
+            <h5 class="card-title">Book your Journey</h5>
+            <form class="row">
+              <div class="col">
+                <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+              </div>
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+              </div>
+              <div class="col-12">
+                <input type="email" class="form-control" placeholder="E-mail" aria-label="E-mail">
+              </div>
+
+              <div class="col-12">
+
+                <input type="text" class="form-control" placeholder="Address" aria-label="Address">
+              </div>
+              <div class="col-12">
+
+                <input type="tel" class="form-control" id="number" placeholder="Mobile Number with county code"
+                  aria-label="Mobile Number with county code">
+              </div>
+
+
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Destination" aria-label="Destination">
+              </div>
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Dlocation" aria-label="Dlocation">
+              </div>
+
+              <div class="col-12">
+
+                <input type="number" class="form-control" placeholder="noperson" aria-label="noperson">
+              </div>
+              <div class="col">
+                <input type="text" class="form-control" placeholder="PackageCode" aria-label="pcode">
+              </div>
+              <div class="col-12">
+
+                <input type="date" class="form-control" placeholder="checkin" aria-label="checkin">
+              </div>
+              <div class="col-12">
+
+                <input type="date" class="form-control" placeholder="checkout" aria-label="checkout">
+              </div>
+              <div class="mb-3">
+                <label for="formFileSm" class="form-label">Upload image of any Photo ID Proof</label>
+                <input class="form-control form-control-sm" id="formFileSm" type="file">
+              </div>
+
+              <div class="col-12">
+                <button type="submit" class="btnbook">Book Now</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!--4 end-->
+  <div>
+    <h6 class="heading" id="packages1">
+      <span class="hd">P</span>
+      <span class="hd">A</span>
+      <span class="hd">K</span>
+      <span class="hd">A</span>
+      <span class="hd">G</span>
+      <span class="hd">E</span>
+      <span class="hd">S</span>
+    </h6>
+  </div>
+  <div style="padding:10px">
+    <!--5th raw-->
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="./Bimages/maldives.webp" class="card-img-top" alt="..." class="pakimg1"id="galimg">
+          <div class="card-body">
+            <h5 class="card-title"><i class="fa-solid fa-location-dot"></i>Maldives</h5>
+            <p class="card-text">4N lagoon over waterpool,includes break fast and dinner. <br>
+              <i class="fa-solid fa-calendar-days"></i>:5 Days-4 Nights <br><i
+                class="fa-solid fa-indian-rupee-sign"></i>:158000 <br>Package code:01210 <br>Review
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><br> 
+               <a href="#book"><button type="submit"class="btnbook">Book Now </button></a> 
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="./Bimages/pattaya.webp" class="card-img-top" alt="..."id="galimg">
+          <div class="card-body">
+            <h5 class="card-title"><i class="fa-solid fa-location-dot"></i>Pattaya</h5>
+            <p class="card-text">James bond island tour and coral island. <br><i class="fa-solid fa-calendar-days"></i>3
+              Days <br><i class="fa-solid fa-indian-rupee-sign"></i>:158000 <br>Package code:0572 <br>Review
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><br> 
+                <a href="#book"><button type="submit"class="btnbook">Book Now </button></a> 
+                
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="./Bimages/europ.webp" class="card-img-top" alt="..."id="galimg">
+          <div class="card-body">
+            <h5 class="card-title"><i class="fa-solid fa-location-dot"></i>Europe</h5>
+            <p class="card-text">Welcome to the capital of Spain!Explore the europe<br>
+              <i class="fa-solid fa-calendar-days"></i>:6 Days- 5Nights <br><i
+                class="fa-solid fa-indian-rupee-sign"></i>:658000 <br>Package code:0312 <br>Review
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><br> 
+                <a href="#book"><button type="submit"class="btnbook">Book Now </button></a> 
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="./Bimages/australia.webp" class="card-img-top" alt="..."id="galimg">
+          <div class="card-body">
+            <h5 class="card-title"><i class="fa-solid fa-location-dot"></i>Australia</h5>
+            <p class="card-text">Explore Australia by choosing the package <br><i
+                class="fa-solid fa-calendar-days"></i>:6 Days- 5Nights <br><i
+                class="fa-solid fa-indian-rupee-sign"></i>:658000 <br>Package code:0021 <br>Review
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i><br>
+                <a href="#book"><button type="submit"class="btnbook">Book Now </button></a> 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="space"></div>
+    <!--first-->
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="./Bimages/maldives.webp" class="card-img-top" alt="..." class="pakimg1"id="galimg">
+          <div class="card-body">
+            <h5 class="card-title"><i class="fa-solid fa-location-dot"></i>Kerala</h5>
+            <p class="card-text">God's own country explore the habbitate. <br>
+              <i class="fa-solid fa-calendar-days"></i>:5 Days <br><i class="fa-solid fa-indian-rupee-sign"></i>:60000
+              <br>Package code:0009 <br>Review
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><br> 
+                <a href="#book"><button type="submit"class="btnbook">Book Now </button></a> 
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="./Bimages/kashmir.webp" class="card-img-top" alt="..."id="galimg">
+          <div class="card-body">
+            <h5 class="card-title"><i class="fa-solid fa-location-dot"></i>Kashmir</h5>
+            <p class="card-text">Take pleasant walks by the Dal Lake, explore Betaab Valley & more. <br><i
+                class="fa-solid fa-calendar-days"></i>5 Days <br><i class="fa-solid fa-indian-rupee-sign"></i>:100000
+              <br>Package code:0010 <br>Review
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><br> <a href="#book"><button type="submit"class="btnbook">Book Now </button></a> 
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="./Bimages/humpi.webp" class="card-img-top" alt="..."id="galimg">
+          <div class="card-body">
+            <h5 class="card-title"><i class="fa-solid fa-location-dot"></i>Hampi</h5>
+            <p class="card-text">Hampi is famous for the medieval Hindu kingdom <br>
+              <i class="fa-solid fa-calendar-days"></i>:4Days <br><i class="fa-solid fa-indian-rupee-sign"></i>:125000
+              <br>Package code:0011 <br>Review
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><br> 
+                <a href="#book"><button type="submit"class="btnbook">Book Now </button></a> 
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="./Bimages/rajasthan.webp" class="card-img-top" alt="..." id="galimg">
+          <div class="card-body">
+            <h5 class="card-title"><i class="fa-solid fa-location-dot"></i>Rajasthan</h5>
+            <p class="card-text">Short Trip to Ranthambore - Weekend Getaway.<br><i
+                class="fa-solid fa-calendar-days"></i>:2Days <br><i class="fa-solid fa-indian-rupee-sign"></i>:15000
+              <br>Package code:0012 <br> Review
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star-half-stroke"></i><br>
+                <a href="#book"><button type="submit"class="btnbook">Book Now </button></a> 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--5end-->
+  <div>
+    <h6 class="heading" id="gallery1">
+      <span class="hd">G</span>
+      <span class="hd">A</span>
+      <span class="hd">L</span>
+      <span class="hd">L</span>
+      <span class="hd">E</span>
+      <span class="hd">R</span>
+      <span class="hd">Y</span>
+    </h6>
+  </div>
+  <div style="padding:10px">
+    <!--6th start-->
+    <div class="row row-cols-1 row-cols-md-5 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="./Bimages/gal5.webp" class="card-img-top" alt="..."id="galimg">
+          <!-- <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div> -->
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="./Bimages/gal4.webp" class="card-img-top" alt="..."id="galimg">
+          <!-- <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div> -->
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="./Bimages/gal3.webp" class="card-img-top" alt="..."id="galimg">
+          <!-- <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                </div> -->
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="./Bimages/gal2.webp" class="card-img-top" alt="..."id="galimg">
+          <!-- <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div> -->
+        </div>
+      </div>
+      <!-- 2 etra -->
+      <div class="col">
+        <div class="card">
+          <img src="./Bimages/gal1.webp" class="card-img-top" alt="..." id="galimg">
+          <!-- <div class="card-body">
+                   
+                </div> -->
+        </div>
+      </div>
+    </div>
+    <!--first raw gal-->
+    <div class="space"></div>
+
+    <div class="row row-cols-1 row-cols-md-5 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="./Bimages/gal8.jpg" class="card-img-top" alt="..." id="galimg">
+          <!-- <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div> -->
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="./Bimages/gal7.webp" class="card-img-top" alt="..."id="galimg">
+          <!-- <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div> -->
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="./Bimages/gal9.jpg" class="card-img-top" alt="..."id="galimg">
+          <!-- <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                </div> -->
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="./Bimages/australia.webp" class="card-img-top" alt="..."id="galimg">
+          <!-- <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div> -->
+        </div>
+      </div>
+      <!-- 2 etra -->
+      <div class="col">
+        <div class="card">
+          <img src="./Bimages/gal10.jpg" class="card-img-top" alt="..."id="galimg">
+          <!-- <div class="card-body">
+                   
+                </div> -->
+        </div>
+      </div>
+
+    </div>
+    <div class="space"></div>
+    <!--2 raw gall-->
+    <div class="row row-cols-1 row-cols-md-5 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="./Bimages/gal11.jpg" class="card-img-top" alt="..."id="galimg">
+          <!-- <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div> -->
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="./Bimages/Dgal12.webp" class="card-img-top" alt="..."id="galimg">
+          <!-- <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div> -->
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="./Bimages/gal13.jpg" class="card-img-top" alt="..."id="galimg">
+          <!-- <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                </div> -->
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="./Bimages/gal14.webp" class="card-img-top" alt="..."id="galimg">
+          <!-- <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div> -->
+        </div>
+      </div>
+      <!-- 2 etra -->
+      <div class="col">
+        <div class="card">
+          <img src="./Bimages/gal15.jpg" class="card-img-top" alt="..."id="galimg">
+          <!-- <div class="card-body">
+                   
+                </div> -->
+        </div>
+      </div>
+
+    </div>
+
+
+  </div><!-- 6th end-->
+  <div>
+    <h6 class="heading">
+      <span class="hd">W</span>
+      <span class="hd">H</span>
+      <span class="hd">Y</span>
+      &NonBreakingSpace;
+      <span class="hd">W</span>
+      <span class="hd">E</span>
+      &NonBreakingSpace;
+      <span class="hd">C</span>
+      <span class="hd">H</span>
+      <span class="hd">O</span>
+      <span class="hd">O</span>
+      <span class="hd">S</span>
+
+      <span class="hd">E</span>
+    </h6>
+  </div>
+  <div style="padding:10px">
+    <!--7th start-->
+
+    <div class="card-group " id="#pos">
+      <div class="card">
+        <div class="card-body" id="div7">
+          <h5 class="card-title"><i class="fa-solid fa-users"></i></i>Experience</h5>
+          <p class="card-text">Our dedicated travel team diligently works round-the-clock to design the best travel
+            experiences for the customers. The skilled team spends considerable amounts of time ideating tour packages
+            that guarantee to make travelling with us an experience like no other. We select the finest hotels in every
+            category, boast an excellent personal fleet of vehicles for transportation.</p>
+        </div>
+      </div>
+      <div class="card">
+
+        <div class="card-body" id="div7">
+          <h5 class="card-title"><i class="fa-solid fa-comments"></i>Positive Customer Feedback</h5>
+          <p class="card-text">
+            We're truly humbled to have received volumes of positive customer feedback for our services. This
+            appreciation from our prestigious clients is more valuable than any award for us. As a customer-driven
+            travel company, our priority has always been their satisfaction. Therefore, our dedicated team of experts
+            endeavours to achieve the goal of making our customers happy.</p>
+
+        </div>
+      </div>
+      <div class="card">
+
+        <div class="card-body" id="div7">
+          <h5 class="card-title"><i class="fa-solid fa-users"></i>Recognition</h5>
+          <p class="card-text">
+            We are proud to be accredited by major tour and travel associations in India and world like IATA, IATO,
+            TAAI, IMF, MOT (Ministry of Tourism, Govt of India), and TOFT. It is an honour for us to be able to be a
+            part of crucial initiatives towards safeguarding animal rights, protection of endangered species, and
+            responsible mountaineering and trekking ventures.</p>
+
+        </div>
+      </div>
+      <div class="card">
+
+        <div class="card-body" id="div7">
+          <h5 class="card-title"><i class="fa-solid fa-link"></i>Quick Links</h5>
+          <p class="card-text">
+            <ul>
+
+              <li><a href="#">Packages</a></li>
+              <li><a href="">Blog</a></li>
+              <li><a href="">Gallery</a></li>
+              <li><a href="#">Login</a></li>
+              <li><a href="">Search</a></li>
+            </ul>
+          </p>
+
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <!--7th end-->
+
+  <div>
+    <h6 class="heading">
+      <span class="hd">F</span>
+      <span class="hd">E</span>
+      <span class="hd">E</span>
+
+      <span class="hd">D</span>
+      <span class="hd">B</span>
+      <span class="hd">A</span>
+      <span class="hd">C</span>
+      <span class="hd">K</span>
+      &NonBreakingSpace;
+      <span class="hd">A</span>
+      <span class="hd">N</span>
+      <span class="hd">D</span>
+      &NonBreakingSpace;
+      <span class="hd">S</span>
+      <span class="hd">U</span>
+      <span class="hd">G</span>
+      <span class="hd">G</span>
+      <span class="hd">E</span>
+      <span class="hd">S</span>
+      <span class="hd">T</span>
+      <span class="hd">I</span>
+      <span class="hd">O</span>
+      <span class="hd">N</span>
+
+    </h6>
+  </div>
+  <div style="padding: 10px;">
+    <!--8th start-->
+    <div class="mb-3" id="feedback">
+
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="mail@example.com">
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      <button type="button" class="btn btn-warning" style="margin: auto;">Send</button>
+    </div>
+  </div>
+  <!--8 end-->
+
+  <div style="padding:10px;">
+    <!--9start-->
+
+    <div class="card-group" id="div8" style="border-color:rgba(255, 186, 58, 0.2); ">
+      <div class="card" style="border-color:rgba(255, 186, 58, 0.2); ">
+        <div class="card-body" id="div8">
+          <h5 class="card-title"><img src="./Bimages/brand-color.svg" alt="" class="logo"></h5>
+          <p class="card-text"><i class="fa-solid fa-location-dot"></i>All over <br> Kerala <br>
+            <i class="fa-solid fa-phone"></i>-9894324567 <br>
+            <i class="fa-brands fa-whatsapp" style="color:rgb(14, 231, 86)"></i>989566432
+
+          </p>
+        </div>
+      </div>
+      <div class="card" style="border-color:rgba(255, 186, 58, 0.2); ">
+
+        <div class="card-body" id="div8">
+          <h5 class="card-title"><i class="fa-solid fa-comments"></i>In the main Section</h5>
+          <p class="card-text">
+          <ul>
+
+            <li><a href="#">Packages</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Gallery</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="">Search</a></li>
+          </ul>
+          </p>
+
+        </div>
+      </div>
+      <div class="card" style="border-color:rgba(255, 186, 58, 0.2); ">
+
+        <div class="card-body" id="div8">
+          <h5 class="card-title"><i class="fa-solid fa-users"></i>
+            Company</h5>
+          <p class="card-text">
+          <ul>
+            <li>About Us</li>
+            <li>Careers</li>
+            <li>Terms And Conditions</li>
+            <li>Privacy policy</li>
+          </ul>
+          </p>
+
+        </div>
+      </div>
+      <div class="card" style="border-color:rgba(255, 186, 58, 0.2); ">
+
+        <div class="card-body" id="div8">
+          <h5 class="card-title"><i class="fa-solid fa-hashtag"></i>Social Media</h5>
+          <p class="card-text">
+          <ul>
+            <li><i class="fa-brands fa-facebook" style="color:rgb(51, 151, 233)"></i>Worldtravel</li>
+            <li><i class="fa-brands fa-instagram" style="color:rgb(207, 24, 207)"></i>worldtrvl</li>
+            <li><i class="fa-brands fa-whatsapp-square" style="color:rgb(14, 231, 86)"></i>travelmates</li>
+            <li><i class="fa-brands fa-youtube" style="color:rgb(228, 22, 22)"></i><a href="https://www.youtube.com/embed/7lvXbfNBIQg" style="text-decoration:none; color:black" >www.traveltv.com</a></li>
+
+          </ul>
+          </p>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+  </div>
+  <!--9end-->
+
+
+
+</body>
+
+</html>

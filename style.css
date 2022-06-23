@@ -1,0 +1,197 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;1,300&family=Arvo&family=Caveat&family=Cookie&family=EB+Garamond:ital@0;1&family=Great+Vibes&family=Josefin+Sans:ital,wght@0,100;1,200&family=Libre+Baskerville:ital@0;1&family=Libre+Bodoni:ital@1&family=Merriweather:ital,wght@0,300;1,300&family=Pacifico&family=Roboto+Slab:wght@300;400&family=Send+Flowers&family=Source+Sans+Pro:wght@300;400&family=Square+Peg&family=Tapestry&family=Ubuntu+Mono&family=Water+Brush&display=swap');
+
+.navbar{
+    background-color: rgb(116, 166, 212);
+    
+    
+}
+
+    
+    
+
+
+.nav-link{
+    color: white;
+}
+.dropdown-menu ul{
+    background-color: rgb(28, 78, 124);
+}
+.logo{
+    width:150px;
+    height: 50px;
+}
+.navbar-toggler{
+    color: white;
+    background: gray;
+}
+.serch{
+    background-color: aqua;
+}
+.carousel-item{
+    width: 100%;
+    height: 500px;
+}
+.slide1{
+    font-family: 'Roboto Slab', serif;;
+    font-size:xx-large;
+    font-weight: 500;
+    margin-top: 100px;
+    color: white;
+    /* border: 1px solid white;
+    padding: 10px; */
+}
+.slide2{
+    font-family: 'Roboto Slab', serif;;
+    font-size:xx-large;
+    font-weight: 500;
+    margin-top: 100px;
+    color: black;
+}
+.slide3{
+    font-family: 'Roboto Slab', serif;;
+    font-size:xx-large;
+    font-weight: 500;
+    margin-top: 100px;
+    color:black;
+}
+.heading{
+   text-align: center;
+   padding: 1.5rem 0;
+}
+.hd{
+    font-size: 1.5rem;
+    background: rgba(255,165,0,.2);
+    color: orange;
+    border-radius: .3rem;
+    padding:.1rem .3rem; 
+    display: inline-block;
+    font-family:  'Roboto Slab', serif;;
+    
+    
+}
+.card-title{
+    font-family:  'Roboto Slab', serif;;
+
+}
+/* .vision{
+    height: 700px;
+    background-color: rgb(58, 139, 139); */
+/* } */
+.vimage{
+    width:100%;
+    height:300px ;
+}
+.card-text{
+    font-family: 'Roboto Slab', serif;;
+    text-align: justify;
+}
+.btnvibtn{
+    background-color: orange;
+    border:none
+}
+.regform{
+    padding: 10px;
+}
+.bookyoursloat{
+    height:500px;
+}
+.form-select{
+    width:50px;
+}
+.btnbook
+{
+    background-color: orange;
+    border:none;
+    border-radius: 5px;
+    width: 100%;
+    align-items: center;
+    height: 40px;
+    
+}
+.form-control{
+    font-family:'Roboto Slab', serif;; 
+}
+.aboutimg{
+    width: 100%;
+    height: 300px;
+}
+.card-img-top{
+    height: 200px;
+    width:10px;
+}
+.fa-solid{
+    color: orange;
+}
+.fa-regular{
+    color: orange;
+
+}
+#div7{
+    background: rgba(255,165,0,.2);
+}
+#feedback{
+    width:30%;
+    align-items: center;
+    margin: auto;
+   
+    
+    
+}
+#div8{
+    background: rgba(255, 186, 58, 0.2);
+}
+#pos{
+    position:sticky;
+    top:10px;
+}
+#loginuser{
+    background-color:  rgb(116, 166, 212);
+    border: none;
+}
+.loginbtn{
+    background-color:rgb(35, 133, 224) ;
+    color:white ;
+    border: 1px solid white;
+    border-radius: 5px;
+    width:140px;
+    height: 40px;
+}
+#galimg:hover {
+    box-shadow: .5px 1px rgb(0, 0, 0);
+    opacity: .5;
+    transform: scale(.9); 
+}
+    
+
+.imagedes{
+    background-color: black;
+    color: white;
+    opacity: 0;
+}
+.galcard:hover.galdes{
+    height:200px;
+    width:100%;
+    background:black;
+    color:white;
+}
+.galcard:hover.p{
+    opacity:1;
+    visibility: visible;
+
+}
+.space{
+    width: 100%;
+    height:20px;
+}
+ ul li{
+    list-style: none;
+}
+.search-container{
+    width: 50%;
+    
+}
+#galimage{
+    border-radius: 50px;
+}
+
